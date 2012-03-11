@@ -6,7 +6,11 @@ http://code.google.com/p/android-java-tutorial/wiki/GettingStarted
 
 = Introduction =
 
-Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie (whom I once met when I worked in Bell Labs, by the way) -- writing has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time.
+We'll separate the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweigh the cost (overhead of passing info to and from Java to XML).
+
+= Libraries are more important than language =
+
+Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie -- writing has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time.
 
 
 _work in progress_

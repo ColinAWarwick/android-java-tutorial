@@ -51,4 +51,4 @@ http://mobile.tutsplus.com/tutorials/android/java-reflection/
 
 = 4. Next =
 
-I'll upload some simple example projects bases on widgets.
+I'll upload some simple example projects based on widgets.

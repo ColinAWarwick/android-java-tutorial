@@ -3,6 +3,8 @@
 
 = Introduction =
 
+My mobile contract expired and I decided to switch from iOS to Android. But Android Marketplace (now Google Play) lacked a simple iPhone app that I used to use on my old phone. So I despite the fact that I didn't know Java nor Android, I decided to develop it myself and document my adventure here. Hope you find it helpful...
+
 Here's the first steps I took to get started with Java for Android.
 
 = 1. Install the SDK =

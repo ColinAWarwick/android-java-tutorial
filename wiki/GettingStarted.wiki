@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Here's the first three steps I took to get started with Java for Android.
+Here's the first steps I took to get started with Java for Android.
 
 = 1. Install the SDK =
 

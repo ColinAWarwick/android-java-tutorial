@@ -14,7 +14,7 @@ http://developer.android.com/sdk/installing.html
 ...has all the info but I found the sequence confusing. The best sequence I found was:
 
 # Install JDK from Oracle http://www.oracle.com/technetwork/java/javase/downloads/index.html Note that although you probably have Java Run Time (JRE) already, it isn't sufficient to develop apps.
-# Install the Android SDK Starter Package from http://developer.android.com/sdk/index.html I used the Windows *.exe method. It launches the Android SDK and AVD (Android Virtual Device) Manager that I used for the next step...
+# Install the Android SDK Starter Package from http://developer.android.com/sdk/index.html I used the Windows .exe method. It launches the Android SDK and AVD (Android Virtual Device) Manager that I used for the next step...
 # Install the recommended SDK platform http://developer.android.com/sdk/installing.html#which You need to do this because the Starter Package doesn't contain any platforms and you need at least one to target.
 # Install the Eclipse SDK from http://www.eclipse.org/downloads/ I installed the "Eclipse Classic" version
 # Just as the Android SDK comes in two pieces (Starter+platform), the basic Eclipse package lacks Android-specific functionality. So, install the ADT (Android Developer Tools) plugin http://developer.android.com/sdk/eclipse-adt.html#installing

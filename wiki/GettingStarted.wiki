@@ -1,0 +1,49 @@
+#summary How to get started with Java for Android
+#labels Featured
+
+= Introduction =
+
+Here's the first three steps I took to get started with Java for Android.
+
+= 1. Install the SDK =
+
+The first port of call is to install the SDK. Unlike iOS, which has an all-in-one package (Xcode), you have grab piece from several places. The page:
+
+http://developer.android.com/sdk/installing.html
+
+...has all the info but I found the sequence confusing. The best sequence I found was:
+
+# Install JDK from Oracle http://www.oracle.com/technetwork/java/javase/downloads/index.html Note that although you probably have Java Run Time (JRE) already, it isn't sufficient to develop apps.
+# Install the Android SDK Starter Package from http://developer.android.com/sdk/index.html I used the Windows *.exe method. It launches the Android SDK and AVD (Android Virtual Device) Manager that I used for the next step...
+# Install the recommended SDK platform http://developer.android.com/sdk/installing.html#which You need to do this because the Starter Package doesn't contain any platforms and you need at least one to target.
+# Install the Eclipse SDK from http://www.eclipse.org/downloads/ I installed the "Eclipse Classic" version
+# Just as the Android SDK comes in two pieces (Starter+platform), the basic Eclipse package lacks Android-specific functionality. So, install the ADT (Android Developer Tools) plugin http://developer.android.com/sdk/eclipse-adt.html#installing
+
+Phew! If you get error messages, Google around for a fix.
+
+= 2. Compare the hello world examples =
+
+There are two versions of "Hello, world."
+
+# "Programmatic UI" is fragile but flexible in that you can set the displayed string from within Java.
+# "XML-based layout UI" uses a more robust method, but in the example the Java code can't "touch" the string contents, which is set in the XML file.
+
+Both are here:
+
+http://developer.android.com/resources/tutorials/hello-world.html
+
+The Android Virtual Device takes a long time to boot so don't close it once you've done an example. Left it open and the next example will load quickly.
+
+= 3. Google for java android tutorial =
+
+Next, I found some Java tutorials, but they used a very basic command line input-output ("System.out.println" method) to show the sequence of execution. I could have adapted the programmatic UI but I wanted to use the XML method so I learnt about widgets to see how the XML and Java could interact:
+
+http://developer.android.com/resources/tutorials/views/hello-formstuff.html
+
+This one was very helpful on theory but I learn best by doing and it didn't seem to have many complete examples:
+
+http://mobile.tutsplus.com/tutorials/android/java-reflection/
+
+= 4. Next =
+
+I'll upload some simple example projects bases on widgets.

@@ -53,4 +53,8 @@ http://mobile.tutsplus.com/tutorials/android/java-reflection/
 
 = 4. Next =
 
-I'll upload some simple example projects based on widgets.
+This next posting:
+
+http://code.google.com/p/android-java-tutorial/wiki/SimpleTutorialApp
+
+...has some simple example projects based on widgets.

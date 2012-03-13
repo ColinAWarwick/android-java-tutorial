@@ -67,6 +67,10 @@ This one was very helpful on theory but I learn best by doing and it didn't seem
 
 http://mobile.tutsplus.com/tutorials/android/java-reflection/
 
+= 4. Subversive plugin for Eclipse to interface to Subversion =
+
+http://www.eclipse.org/subversive/index.php
+
 = 4. Next =
 
 This next posting:

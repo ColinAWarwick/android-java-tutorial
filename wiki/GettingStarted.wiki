@@ -53,7 +53,7 @@ http://developer.android.com/resources/tutorials/hello-world.html
 
 2a) "Programmatic UI" is fragile but flexible in that you can set the displayed string from within Java.
 
-2b) "XML-based layout UI" uses a more robust method, but in the example the Java code can't "touch" the string contents, which is set in the XML file.
+2b) "XML-based layout UI" uses a more robust method, but in the example the Java code can't "touch" the string contents, which is set in the XML file. (Scroll to the link at the bottom for the solution.)
 
 The Android Virtual Device (AVD) takes a long time to boot so don't close it once you've done an example. Left it open and the next example will load quickly.
 
@@ -71,7 +71,7 @@ http://mobile.tutsplus.com/tutorials/android/java-reflection/
 
 http://www.eclipse.org/subversive/index.php
 
-= 4. Next =
+= 5. Next =
 
 This next posting:
 

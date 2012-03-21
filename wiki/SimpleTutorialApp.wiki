@@ -15,55 +15,68 @@ http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
 File #1:
 
 {{{
-// HelloTextView.java
+// ./HelloTextView/src/com.example.hellotextview/HelloTextView.java
 package com.example.hellotextview;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.*;
-// import android.content.Intent;
 import android.view.View;
 
 public class HelloTextView extends Activity {
+    Motor m0 = new Motor("Top");
+    Motor m1 = new Motor("Bottom");
     /** Called when the activity is first created. */
-    Motor m = new Motor();
-    Motor m2 = new Motor();
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	TextView theText;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-	m.manufacturer = "Lego";
-	m2.manufacturer = "Tetrix";
+
+	    theText = (TextView) findViewById(R.id.MotorStatus0);
+    	theText.setText(m0.id + m0.status());
+
+	    theText = (TextView) findViewById(R.id.MotorStatus1);
+    	theText.setText(m1.id + m1.status());
     }
-    public void whenOnButtonClicked(View button) {
-	final TextView theText = (TextView) findViewById(R.id.MotorStatus);
-    	theText.setText(m.manufacturer + m.start());
+    public void whenOnButton0Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus0);
+    	theText.setText(m0.id + m0.start());
     }
-    public void whenOffButtonClicked(View button) {
-	final TextView theText = (TextView) findViewById(R.id.MotorStatus);
-    	theText.setText(m.manufacturer + m.stop());
+    public void whenOffButton0Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus0);
+    	theText.setText(m0.id + m0.stop());
     }
-    public void whenOnButton2Clicked(View button) {
-	final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
-    	theText.setText(m2.manufacturer + m2.start());
+    public void whenOnButton1Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus1);
+    	theText.setText(m1.id + m1.start());
     }
-    public void whenOffButton2Clicked(View button) {
-	final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
-    	theText.setText(m2.manufacturer + m2.stop());
+    public void whenOffButton1Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus1);
+    	theText.setText(m1.id + m1.stop());
     }
 }
-
 }}}
 
 File #2:
 
 {{{
-// Motor.java
+// ./HelloTextView/src/com.example.hellotextview/Motor.java
 package com.example.hellotextview;
 
 public class Motor {
-	String manufacturer;
-	boolean running = false;
+	String id;
+	boolean running;
+	Motor(String id) {
+		this.id = id;
+	}
+	String status() {
+		if (running == true) {
+			return " is running.";
+		} else {
+			return " is stopped.";
+		}
+	}
 	String start() {
 		if (running == true) {
 			return " is already running.";
@@ -83,10 +96,10 @@ public class Motor {
 }
 }}}
 
-File #3 layout/main.xml:
+File #3:
 {{{
 <?xml version="1.0" encoding="utf-8"?>
-
+<!-- ./HelloTextView/res/layout/main.xml -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
@@ -94,53 +107,54 @@ File #3 layout/main.xml:
     android:layout_weight="1"
     android:orientation="vertical">
     <Button
-        android:id="@+id/off_button"
+        android:id="@+id/off_button0"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="@string/turn_off"
-        android:onClick="whenOffButtonClicked"/>
+        android:onClick="whenOffButton0Clicked"/>
     <Button
-        android:id="@+id/on_button"
+        android:id="@+id/on_button0"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="@string/turn_on"
-        android:onClick="whenOnButtonClicked"/>
-    <TextView
-	android:id="@+id/MotorStatus"  
-	android:layout_height="wrap_content"  
-	android:text="@string/motor_status_def"  
-	android:layout_width="fill_parent"/>
-    <Button
-        android:id="@+id/off_button2"
+        android:onClick="whenOnButton0Clicked"/>
+	<TextView
+	    android:id="@+id/MotorStatus0"  
+	    android:layout_height="wrap_content"  
+	    android:text="@string/motor_status_def"  
+	    android:layout_width="fill_parent"/>
+	 <Button
+        android:id="@+id/off_button1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="@string/turn_off"
-        android:onClick="whenOffButton2Clicked"/>
+        android:onClick="whenOffButton1Clicked"/>
     <Button
-        android:id="@+id/on_button2"
+        android:id="@+id/on_button1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="@string/turn_on"
-        android:onClick="whenOnButton2Clicked"/>
-    <TextView
-	android:id="@+id/MotorStatus2"  
-	android:layout_height="wrap_content"  
-	android:text="@string/motor_status_def"  
-	android:layout_width="fill_parent"/> 
+        android:onClick="whenOnButton1Clicked"/>
+	<TextView
+	    android:id="@+id/MotorStatus1"  
+	    android:layout_height="wrap_content"  
+	    android:text="@string/motor_status_def"  
+	    android:layout_width="fill_parent"/> 
 </LinearLayout>   
 }}}
 
 File #4 values/strings.xml:
 {{{
 <?xml version="1.0" encoding="utf-8"?>
+<!-- ./HelloTextView/res/values/strings.xml -->
 <resources>
     <string name="turn_on">On</string>
     <string name="turn_off">Off</string>
-    <string name="motor_status_def">Unknown</string>
+    <string name="motor_status_def">Status unknown</string>
     <string name="app_name">HelloTextView</string>
 </resources>
 }}}

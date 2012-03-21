@@ -36,19 +36,19 @@ public class HelloTextView extends Activity {
 	m2.manufacturer = "Tetrix";
     }
     public void whenOnButtonClicked(View button) {
-	    final TextView theText = (TextView) findViewById(R.id.MotorStatus);
+	final TextView theText = (TextView) findViewById(R.id.MotorStatus);
     	theText.setText(m.manufacturer + m.start());
     }
     public void whenOffButtonClicked(View button) {
-	    final TextView theText = (TextView) findViewById(R.id.MotorStatus);
+	final TextView theText = (TextView) findViewById(R.id.MotorStatus);
     	theText.setText(m.manufacturer + m.stop());
     }
     public void whenOnButton2Clicked(View button) {
-	    final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
+	final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
     	theText.setText(m2.manufacturer + m2.start());
     }
     public void whenOffButton2Clicked(View button) {
-	    final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
+	final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
     	theText.setText(m2.manufacturer + m2.stop());
     }
 }

@@ -147,7 +147,7 @@ File #4 values/strings.xml:
 
 = Result =
 
-<wiki:video url="http://www.youtube.com/watch?v=WTE-dhHLAHI"/>
+<wiki:video url="http://www.youtube.com/watch?v=WTE-dhHLAHI&hd=1"/>
 
 = Libraries are more important than language =
 

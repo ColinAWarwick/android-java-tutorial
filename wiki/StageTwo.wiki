@@ -1,0 +1,29 @@
+#summary Next step after learning programmatic control of XML UIs.
+#labels Featured
+
+= Google for "java android tutorial" =
+
+Next, I learnt about the various widgets:
+
+http://developer.android.com/resources/tutorials/views/hello-formstuff.html
+
+This posting was very helpful on theory but doesn't seem to have many complete examples:
+
+http://mobile.tutsplus.com/tutorials/android/java-reflection/
+
+This one has some good examples:
+
+http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
+
+= Subversive plugin for Eclipse to interface to Subversion =
+
+I installed this one to make uploading easier:
+
+http://www.eclipse.org/subversive/index.php
+
+= Next =
+
+_work in progress_
+
+
+...

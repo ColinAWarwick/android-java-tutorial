@@ -54,6 +54,38 @@ public class HelloTextView extends Activity {
 
 }}}
 
+File #2:
+
+{{{
+// Motor.java
+package com.example.hellotextview;
+
+public class Motor {
+	String manufacturer;
+	boolean running = false;
+	String start() {
+		if (running == true) {
+			return " is already running.";
+		} else {
+			running = true;
+			return " is starting... running...";
+		}
+	}
+	String stop() {
+		if (running == true) {
+			running = false;
+			return " is stopping... stopped.";
+		} else {
+			return " is already stopped.";
+		}
+	}
+}
+}}}
+
+File #3:
+
+
+
 = Libraries are more important than language =
 
 Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie -- writing has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time.

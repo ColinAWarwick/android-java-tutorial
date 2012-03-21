@@ -32,9 +32,8 @@ public class HelloTextView extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-	    m.manufacturer = "Lego";
-	    m2.manufacturer = "Tetrix";
+	m.manufacturer = "Lego";
+	m2.manufacturer = "Tetrix";
     }
     public void whenOnButtonClicked(View button) {
 	    final TextView theText = (TextView) findViewById(R.id.MotorStatus);

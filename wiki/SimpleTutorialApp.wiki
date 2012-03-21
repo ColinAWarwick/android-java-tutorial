@@ -107,12 +107,12 @@ File #3 layout/main.xml:
         android:padding="10dp"
         android:text="@string/turn_on"
         android:onClick="whenOnButtonClicked"/>
-	<TextView
-	    android:id="@+id/MotorStatus"  
-	    android:layout_height="wrap_content"  
-	    android:text="@string/motor_status_def"  
-	    android:layout_width="fill_parent"/>
-	 <Button
+    <TextView
+	android:id="@+id/MotorStatus"  
+	android:layout_height="wrap_content"  
+	android:text="@string/motor_status_def"  
+	android:layout_width="fill_parent"/>
+    <Button
         android:id="@+id/off_button2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -126,11 +126,11 @@ File #3 layout/main.xml:
         android:padding="10dp"
         android:text="@string/turn_on"
         android:onClick="whenOnButton2Clicked"/>
-	<TextView
-	    android:id="@+id/MotorStatus2"  
-	    android:layout_height="wrap_content"  
-	    android:text="@string/motor_status_def"  
-	    android:layout_width="fill_parent"/> 
+    <TextView
+	android:id="@+id/MotorStatus2"  
+	android:layout_height="wrap_content"  
+	android:text="@string/motor_status_def"  
+	android:layout_width="fill_parent"/> 
 </LinearLayout>   
 }}}
 

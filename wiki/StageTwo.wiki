@@ -1,6 +1,10 @@
 #summary Next step after learning programmatic control of XML UIs.
 #labels Featured
 
+_Continued from:_
+
+http://code.google.com/p/android-java-tutorial/wiki/SimpleTutorialApp
+
 = Google for "java android tutorial" =
 
 Next, I learnt about the various widgets:

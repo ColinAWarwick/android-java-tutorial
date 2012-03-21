@@ -1,4 +1,5 @@
 #summary A simple tutorial app
+#labels Featured
 
 _Continued from:_
 
@@ -166,3 +167,5 @@ Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Program
 = Next =
 
 The next posting will give links to some more tutorial and my next example:
+
+http://code.google.com/p/android-java-tutorial/wiki/StageTwo

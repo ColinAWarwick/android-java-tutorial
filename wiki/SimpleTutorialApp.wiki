@@ -10,6 +10,49 @@ We'll separate the program (in the Java code) from the presentation (in the XML 
 
 http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
 
+File #1:
+
+{{{
+// HelloTextView.java
+package com.example.hellotextview;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.*;
+// import android.content.Intent;
+import android.view.View;
+
+public class HelloTextView extends Activity {
+    /** Called when the activity is first created. */
+    Motor m = new Motor();
+    Motor m2 = new Motor();
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+
+	    m.manufacturer = "Lego";
+	    m2.manufacturer = "Tetrix";
+    }
+    public void whenOnButtonClicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus);
+    	theText.setText(m.manufacturer + m.start());
+    }
+    public void whenOffButtonClicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus);
+    	theText.setText(m.manufacturer + m.stop());
+    }
+    public void whenOnButton2Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
+    	theText.setText(m2.manufacturer + m2.start());
+    }
+    public void whenOffButton2Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus2);
+    	theText.setText(m2.manufacturer + m2.stop());
+    }
+}
+
+}}}
 
 = Libraries are more important than language =
 

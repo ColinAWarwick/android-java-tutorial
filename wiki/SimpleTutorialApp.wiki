@@ -5,11 +5,7 @@ _Continued from:_
 http://code.google.com/p/android-java-tutorial/wiki/GettingStarted
 
 = Introduction =
-Just like the example here:
-
-http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
-
-...we'll separate the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweighs the cost (overhead of passing info to and from Java to XML).
+We'll separate the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweighs the cost (overhead of passing info to and from Java to XML).
 
 
 File #1:
@@ -165,4 +161,8 @@ File #4 values/strings.xml:
 
 = Libraries are more important than language =
 
-Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie -- writing code has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time. So it is here. Leveraging the libraries gives your code the functionality it needs.
+Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie -- writing code has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time. So the lesson is the same here. Leveraging the libraries gives your code the functionality it needs.
+
+= Next =
+
+The next posting will give links to some more tutorial and my next example:

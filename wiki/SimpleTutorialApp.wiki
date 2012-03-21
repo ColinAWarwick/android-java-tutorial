@@ -9,7 +9,7 @@ Just like the example here:
 
 http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
 
-We'll separate the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweighs the cost (overhead of passing info to and from Java to XML).
+...we'll separate the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweighs the cost (overhead of passing info to and from Java to XML).
 
 
 File #1:

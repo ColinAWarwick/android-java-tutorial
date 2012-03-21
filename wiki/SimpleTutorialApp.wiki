@@ -82,13 +82,73 @@ public class Motor {
 }
 }}}
 
-File #3:
+File #3 layout/main.xml:
+{{{
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/off_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_off"
+        android:onClick="whenOffButtonClicked"/>
+    <Button
+        android:id="@+id/on_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_on"
+        android:onClick="whenOnButtonClicked"/>
+	<TextView
+	    android:id="@+id/MotorStatus"  
+	    android:layout_height="wrap_content"  
+	    android:text="@string/motor_status_def"  
+	    android:layout_width="fill_parent"/>
+	 <Button
+        android:id="@+id/off_button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_off"
+        android:onClick="whenOffButton2Clicked"/>
+    <Button
+        android:id="@+id/on_button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_on"
+        android:onClick="whenOnButton2Clicked"/>
+	<TextView
+	    android:id="@+id/MotorStatus2"  
+	    android:layout_height="wrap_content"  
+	    android:text="@string/motor_status_def"  
+	    android:layout_width="fill_parent"/> 
+</LinearLayout>   
+}}}
+
+File #4 values/strings.xml:
+{{{
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="turn_on">On</string>
+    <string name="turn_off">Off</string>
+    <string name="motor_status_def">Unknown</string>
+    <string name="app_name">HelloTextView</string>
+</resources>
+}}}
 
 
 
 = Libraries are more important than language =
 
-Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie -- writing has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time.
+Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie -- writing code has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time. So it is here. Leveraging the libraries gives your code the functionality it needs.
 
 
 _work in progress_

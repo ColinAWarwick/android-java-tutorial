@@ -51,30 +51,12 @@ Compare the two versions of `hello, world`:
 
 http://developer.android.com/resources/tutorials/hello-world.html
 
-2a) "Programmatic UI" is fragile but flexible in that you can set the displayed string from within Java.
+2a) "Programmatic UI" is fragile but flexible in that you can set the displayed string from within Java. (The Android Virtual Device (AVD) takes a long time to boot so don't close it once you've done an example. Leave it open and the next build will load quickly.)
 
-2b) "XML-based layout UI" uses a more robust method, but in the example the Java code can't "touch" the string contents, which is set in the XML file. (Scroll to the link at the bottom for the solution.)
+2b) "XML-based layout UI" uses a more robust method, but in the example here the Java code doesn't "touch" the string contents, which is set in the XML file. 
 
-The Android Virtual Device (AVD) takes a long time to boot so don't close it once you've done an example. Left it open and the next example will load quickly.
-
-= 3. Google for "java android tutorial" =
-
-Next, I found some Java tutorials, but they used a very basic command line input-output ("System.out.println" method) to show the sequence of execution. I could have adapted the programmatic UI but I wanted to use the XML method so I learnt about widgets to see how the XML and Java could interact:
-
-http://developer.android.com/resources/tutorials/views/hello-formstuff.html
-
-This one was very helpful on theory but I learn best by doing and it didn't seem to have many complete examples:
-
-http://mobile.tutsplus.com/tutorials/android/java-reflection/
-
-= 4. Subversive plugin for Eclipse to interface to Subversion =
-
-http://www.eclipse.org/subversive/index.php
-
-= 5. Next =
-
-This next posting:
+So, in this next posting:
 
 http://code.google.com/p/android-java-tutorial/wiki/SimpleTutorialApp
 
-...has some simple example projects based on widgets.
+...I created an example with the best of both worlds: robust XML-based layout UI and programmatic control of the UI.

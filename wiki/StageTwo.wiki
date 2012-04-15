@@ -19,6 +19,10 @@ This one has some good examples:
 
 http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
 
+But what I really wanted to do next was to add a hyperlink to a text widget. This one showed me how:
+
+http://stackoverflow.com/questions/6696283/how-to-place-hyperlink-to-a-website-on-android-app
+
 = Subversive plugin for Eclipse to interface to Subversion =
 
 I installed this one to make uploading easier:

@@ -33,9 +33,13 @@ http://developer.android.com/sdk/installing.html#which
 
 You need to do this because the Starter Package doesn't contain any platforms and you need at least one.
 
-On Windows, you have to run the Android SDK Manager in administrator mode. If you don't you'll get an error message something like "Downloading SDK Platform Android 2.3.3, API 10, revision 2
+On Windows, you have to run the Android SDK Manager in administrator mode. If you don't you'll get an error message something like:
+
+{{{
+"Downloading SDK Platform Android 2.3.3, API 10, revision 2
 File not found: C:\Program Files (x86)\Android\android-sdk\temp
 \android-2.3.3_r02-linux.zip (Access is denied)"
+}}}
 
 See this thread for more details:
 

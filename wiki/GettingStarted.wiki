@@ -41,6 +41,12 @@ See this thread for more details:
 
 https://groups.google.com/forum/?fromgroups#!topic/android-developers/cBzE93M2R0A
 
+Right click on the SDK Manager.exe icon in:
+
+C:\Program Files (x86)\Android\android-sdk\
+
+...and select "Run as administrator"
+
 1d) Install the Eclipse SDK from:
 
 http://www.eclipse.org/downloads/

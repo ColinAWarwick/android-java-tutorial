@@ -41,15 +41,15 @@ File not found: C:\Program Files (x86)\Android\android-sdk\temp
 \android-2.3.3_r02-linux.zip (Access is denied)"
 }}}
 
-See this thread for more details:
-
-https://groups.google.com/forum/?fromgroups#!topic/android-developers/cBzE93M2R0A
-
 Right click on the SDK Manager.exe icon in:
 
 C:\Program Files (x86)\Android\android-sdk\
 
 ...and select "Run as administrator"
+
+Hat tip to UDay (Dave) for the fix:
+
+https://groups.google.com/forum/?fromgroups#!topic/android-developers/cBzE93M2R0A
 
 1d) Install the Eclipse SDK from:
 

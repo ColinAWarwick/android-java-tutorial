@@ -79,6 +79,6 @@ http://code.google.com/p/android-java-tutorial/wiki/SimpleTutorialApp
 
 ...I created an example with the best of both worlds: robust XML-based layout UI and programmatic control of the UI.
 
-_Update April, 20 2012_ Google has posted a more extentive tutorial here:
+_Update April, 20 2012_ Google has posted a more extensive tutorial here:
 
 http://developer.android.com/training/index.html

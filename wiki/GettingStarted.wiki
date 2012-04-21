@@ -89,9 +89,9 @@ http://developer.android.com/guide/publishing/publishing.html
 
 ...the package name of your app's `*`.apk file may not begin with any of the following values:
 
-* com.android
-* com.google
-* android
-* com.example
+  * com.android
+  * com.google
+  * android
+  * com.example
 
 ...so pick something else.

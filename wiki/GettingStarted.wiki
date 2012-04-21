@@ -87,7 +87,7 @@ Bear in mind that if you want to upload your app to the Google Play store (forme
 
 http://developer.android.com/guide/publishing/publishing.html
 
-...the package name of your app's *.apk file may not begin with any of the following values:
+...the package name of your app's `*`.apk file may not begin with any of the following values:
 
 * com.android
 * com.google

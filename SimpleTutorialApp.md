@@ -1,0 +1,169 @@
+_Continued from:_
+
+http://code.google.com/p/android-java-tutorial/wiki/GettingStarted
+
+# My first example #
+
+I separated the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweighs the cost (overhead of passing info to and from Java to XML).
+
+
+File #1:
+
+```
+// ./HelloTextView/src/com.example.hellotextview/HelloTextView.java
+package com.example.hellotextview;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.*;
+import android.view.View;
+
+public class HelloTextView extends Activity {
+    Motor m0 = new Motor("Top");
+    Motor m1 = new Motor("Bottom");
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+    	TextView theText;
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+
+	    theText = (TextView) findViewById(R.id.MotorStatus0);
+    	theText.setText(m0.id + m0.status());
+
+	    theText = (TextView) findViewById(R.id.MotorStatus1);
+    	theText.setText(m1.id + m1.status());
+    }
+    public void whenOnButton0Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus0);
+    	theText.setText(m0.id + m0.start());
+    }
+    public void whenOffButton0Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus0);
+    	theText.setText(m0.id + m0.stop());
+    }
+    public void whenOnButton1Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus1);
+    	theText.setText(m1.id + m1.start());
+    }
+    public void whenOffButton1Clicked(View button) {
+	    final TextView theText = (TextView) findViewById(R.id.MotorStatus1);
+    	theText.setText(m1.id + m1.stop());
+    }
+}
+```
+
+File #2:
+
+```
+// ./HelloTextView/src/com.example.hellotextview/Motor.java
+package com.example.hellotextview;
+
+public class Motor {
+	String id;
+	boolean running;
+	Motor(String id) {
+		this.id = id;
+	}
+	String status() {
+		if (running == true) {
+			return " is running.";
+		} else {
+			return " is stopped.";
+		}
+	}
+	String start() {
+		if (running == true) {
+			return " is already running.";
+		} else {
+			running = true;
+			return " is starting... running...";
+		}
+	}
+	String stop() {
+		if (running == true) {
+			running = false;
+			return " is stopping... stopped.";
+		} else {
+			return " is already stopped.";
+		}
+	}
+}
+```
+
+File #3:
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ./HelloTextView/res/layout/main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/off_button0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_off"
+        android:onClick="whenOffButton0Clicked"/>
+    <Button
+        android:id="@+id/on_button0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_on"
+        android:onClick="whenOnButton0Clicked"/>
+    <TextView
+	android:id="@+id/MotorStatus0"  
+	android:layout_height="wrap_content"  
+	android:text="@string/motor_status_def"  
+	android:layout_width="fill_parent"/>
+    <Button
+        android:id="@+id/off_button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_off"
+        android:onClick="whenOffButton1Clicked"/>
+    <Button
+        android:id="@+id/on_button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/turn_on"
+        android:onClick="whenOnButton1Clicked"/>
+    <TextView
+	android:id="@+id/MotorStatus1"  
+	android:layout_height="wrap_content"  
+	android:text="@string/motor_status_def"  
+	android:layout_width="fill_parent"/> 
+</LinearLayout>   
+```
+
+File #4 values/strings.xml:
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ./HelloTextView/res/values/strings.xml -->
+<resources>
+    <string name="turn_on">On</string>
+    <string name="turn_off">Off</string>
+    <string name="motor_status_def">Status unknown</string>
+    <string name="app_name">HelloTextView</string>
+</resources>
+```
+
+# Result #
+
+<a href='http://www.youtube.com/watch?feature=player_embedded&v=WTE-dhHLAHI' target='_blank'><img src='http://img.youtube.com/vi/WTE-dhHLAHI/0.jpg' width='425' height=344 /></a>
+
+# Libraries are more important than language #
+
+Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Programming Language" with the author of C -- Dennis Ritchie -- writing code has been about leveraging the libraries of the language and platform in hand. When K&R published the first edition in 1978, a state-of-the-art PDP 11-70 had text terminals so the library call they leveraged was `printf()` from the standard I/O library. They taught us to `#include` the header file, `stdio.h`, and link the library at compile time. So the lesson is the same here. Leveraging the libraries gives your code the functionality it needs.
+
+# Next #
+
+The next posting will give links to some more tutorial and my next example:
+
+http://code.google.com/p/android-java-tutorial/wiki/StageTwo

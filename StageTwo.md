@@ -1,0 +1,47 @@
+_Continued from:_
+
+http://code.google.com/p/android-java-tutorial/wiki/SimpleTutorialApp
+
+# Google for "java android tutorial" #
+
+Next, I learnt about the various widgets:
+
+http://developer.android.com/resources/tutorials/views/hello-formstuff.html
+
+This posting was very helpful on theory but doesn't seem to have many complete examples:
+
+http://mobile.tutsplus.com/tutorials/android/java-reflection/
+
+This one has some good examples:
+
+http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
+
+But what I really wanted to do next was to add a hyperlink to a text widget. This one showed me how:
+
+http://stackoverflow.com/questions/6696283/how-to-place-hyperlink-to-a-website-on-android-app
+```
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+    	TextView theText;
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+
+        
+    	theText = (TextView) findViewById(R.id.Ad);
+        linkText = "...buy a <a href='http://www.amazon.com/exec/obidos/ASIN/1430231564/309407659021-20'>book about learning Java using Android as an example</a>.";
+        theText.setText(Html.fromHtml(linkText));
+        theText.setMovementMethod(LinkMovementMethod.getInstance());
+    }
+```
+# Subversive plugin for Eclipse to interface to Subversion #
+
+I installed this one to make uploading easier:
+
+http://www.eclipse.org/subversive/index.php
+
+# Next #
+
+_work in progress_
+
+
+...

@@ -1,0 +1,94 @@
+# Introduction #
+
+My mobile contract expired and I decided to switch from iOS to Android. But Android Marketplace (now Google Play) lacked a simple iPhone app that I used to use on my old phone. So I despite the fact that I didn't know Java nor Android, I decided to develop it myself and document my adventure here. Hope you find it helpful...
+
+Here's the first steps I took to get started with Java for Android.
+
+# 1. Install the SDK #
+
+The first port of call is to install the SDK. Unlike iOS, which has an all-in-one package (Xcode), you have grab piece from several places. The page:
+
+http://developer.android.com/sdk/installing.html
+
+...has all the info but I found the sequence confusing. The best sequence I found was:
+
+1a) Install the Java Development Kit (JDK) from Oracle:
+
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+Note that although you probably have Java Run-time Environment (JRE) already, it isn't sufficient to develop apps.
+
+1b) Install the Android SDK Starter Package from:
+
+http://developer.android.com/sdk/index.html
+
+I used the Windows .exe method. It launches the Android SDK and AVD (Android Virtual Device) Manager that I used for the next step...
+
+1c) Install the recommended SDK platform:
+
+http://developer.android.com/sdk/installing.html#which
+
+You need to do this because the Starter Package doesn't contain any platforms and you need at least one.
+
+On Windows, you have to run the Android SDK Manager in administrator mode. If you don't you'll get an error message something like:
+
+```
+"Downloading SDK Platform Android 2.3.3, API 10, revision 2
+File not found: C:\Program Files (x86)\Android\android-sdk\temp
+\android-2.3.3_r02-linux.zip (Access is denied)"
+```
+
+Right click on the SDK Manager.exe icon in:
+
+C:\Program Files (x86)\Android\android-sdk\
+
+...and select "Run as administrator"
+
+Hat tip to UDay (Dave) for the fix:
+
+https://groups.google.com/forum/?fromgroups#!topic/android-developers/cBzE93M2R0A
+
+1d) Install the Eclipse SDK from:
+
+http://www.eclipse.org/downloads/
+
+I installed the "Eclipse Classic" version.
+
+1e) Just as the Android SDK comes in two pieces (Starter+platform), the basic Eclipse package lacks Android-specific functionality. So, install the ADT (Android Developer Tools) plugin:
+
+http://developer.android.com/sdk/eclipse-adt.html#installing
+
+Phew! If you get error messages, Google around for a fix.
+
+# 2. Compare the `hello, world` examples #
+
+Compare the two versions of `hello, world`:
+
+http://developer.android.com/resources/tutorials/hello-world.html
+
+2a) "Programmatic UI" is fragile but flexible in that you can set the displayed string from within Java. (The Android Virtual Device (AVD) takes a long time to boot so don't close it once you've done an example. Leave it open and the next build will load quickly.)
+
+2b) "XML-based layout UI" uses a more robust method, but in the example here the Java code doesn't "touch" the string contents, which is set in the XML file.
+
+So, in this next posting:
+
+http://code.google.com/p/android-java-tutorial/wiki/SimpleTutorialApp
+
+...I created an example with the best of both worlds: robust XML-based layout UI and programmatic control of the UI.
+
+_Update April, 20 2012_ Google has posted a more extensive tutorial here:
+
+http://developer.android.com/training/index.html
+
+Bear in mind that if you want to upload your app to the Google Play store (formerly Android Market):
+
+http://developer.android.com/guide/publishing/publishing.html
+
+...the package name of your app's `*`.apk file may not begin with any of the following values:
+
+  * com.android
+  * com.google
+  * android
+  * com.example
+
+...so pick something else.

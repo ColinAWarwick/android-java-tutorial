@@ -1,5 +1,3 @@
-= My first example =
-
 #summary A simple tutorial app
 #labels Featured
 
@@ -7,14 +5,14 @@ _Continued from:_
 
 https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/GettingStarted
 
-
+= My first example =
 
 I separated the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweighs the cost (overhead of passing info to and from Java to XML).
 
 
 File #1:
 
-{{{
+<code>
 // ./HelloTextView/src/com.example.hellotextview/HelloTextView.java
 package com.example.hellotextview;
 
@@ -56,11 +54,11 @@ public class HelloTextView extends Activity {
     	theText.setText(m1.id + m1.stop());
     }
 }
-}}}
+</code>
 
 File #2:
 
-{{{
+<code>
 // ./HelloTextView/src/com.example.hellotextview/Motor.java
 package com.example.hellotextview;
 
@@ -94,10 +92,10 @@ public class Motor {
 		}
 	}
 }
-}}}
+</code>
 
 File #3:
-{{{
+<code>
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ./HelloTextView/res/layout/main.xml -->
 <LinearLayout
@@ -145,10 +143,10 @@ File #3:
 	android:text="@string/motor_status_def"  
 	android:layout_width="fill_parent"/> 
 </LinearLayout>   
-}}}
+</code>
 
 File #4 values/strings.xml:
-{{{
+<code>
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ./HelloTextView/res/values/strings.xml -->
 <resources>
@@ -157,7 +155,7 @@ File #4 values/strings.xml:
     <string name="motor_status_def">Status unknown</string>
     <string name="app_name">HelloTextView</string>
 </resources>
-}}}
+</code>
 
 = Result =
 
@@ -171,4 +169,4 @@ Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Program
 
 The next posting will give links to some more tutorial and my next example:
 
-http://code.google.com/p/android-java-tutorial/wiki/StageTwo
+https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/StageTwo

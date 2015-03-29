@@ -1,11 +1,13 @@
+= My first example =
+
 #summary A simple tutorial app
 #labels Featured
 
 _Continued from:_
 
-http://code.google.com/p/android-java-tutorial/wiki/GettingStarted
+https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/GettingStarted
 
-= My first example =
+
 
 I separated the program (in the Java code) from the presentation (in the XML resource code) because the benefit (robustness) outweighs the cost (overhead of passing info to and from Java to XML).
 

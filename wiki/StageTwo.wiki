@@ -1,11 +1,9 @@
-#summary Next step after learning programmatic control of XML UIs.
-#labels Featured
+:''Continued from:''
 
-_Continued from:_
+:https://github.com/ColinAWarwick/android-java-tutorial/blob/master/wiki/SimpleTutorialApp.wiki
 
-https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/SimpleTutorialApp
-
-= Google for "java android tutorial" =
+= Stage Two =
+== Google for "java android tutorial" ==
 
 Next, I learnt about the various widgets:
 
@@ -22,7 +20,7 @@ http://mobile.tutsplus.com/tutorials/android/android-sdk-creating-forms/
 But what I really wanted to do next was to add a hyperlink to a text widget. This one showed me how:
 
 http://stackoverflow.com/questions/6696283/how-to-place-hyperlink-to-a-website-on-android-app
-{{{
+<pre>
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	TextView theText;
@@ -35,16 +33,17 @@ http://stackoverflow.com/questions/6696283/how-to-place-hyperlink-to-a-website-o
         theText.setText(Html.fromHtml(linkText));
         theText.setMovementMethod(LinkMovementMethod.getInstance());
     }
-}}}
-= Subversive plugin for Eclipse to interface to Subversion =
+</pre>
+
+== Subversive plugin for Eclipse to interface to Subversion ==
 
 I installed this one to make uploading easier:
 
 http://www.eclipse.org/subversive/index.php
 
-= Next =
+== Next ==
 
-_work in progress_
+''work in progress''
 
 
 ...

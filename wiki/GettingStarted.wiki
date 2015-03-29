@@ -1,19 +1,23 @@
-#summary How to get started with Java for Android
-#labels Featured
-
 = Introduction =
 
 My mobile contract expired and I decided to switch from iOS to Android. But Android Marketplace (now Google Play) lacked a simple iPhone app that I used to use on my old phone. So I despite the fact that I didn't know Java nor Android, I decided to develop it myself and document my adventure here. Hope you find it helpful...
 
 Here's the first steps I took to get started with Java for Android.
 
-= 1. Install the SDK =
+== 1. Install the SDK ==
 
 The first port of call is to install the SDK. Unlike iOS, which has an all-in-one package (Xcode), you have grab piece from several places. The page:
 
 http://developer.android.com/sdk/installing.html
 
-...has all the info but I found the sequence confusing. The best sequence I found was:
+...has all the info but I found the sequence confusing.
+
+:''Update April, 20 2012'' Google has posted a more extensive tutorial here:
+
+: http://developer.android.com/training/index.html
+
+
+The best sequence I found was:
 
 1a) Install the Java Development Kit (JDK) from Oracle:
 
@@ -35,11 +39,11 @@ You need to do this because the Starter Package doesn't contain any platforms an
 
 On Windows, you have to run the Android SDK Manager in administrator mode. If you don't you'll get an error message something like:
 
-{{{
+<pre>
 "Downloading SDK Platform Android 2.3.3, API 10, revision 2
 File not found: C:\Program Files (x86)\Android\android-sdk\temp
 \android-2.3.3_r02-linux.zip (Access is denied)"
-}}}
+</pre>
 
 Right click on the SDK Manager.exe icon in:
 
@@ -63,9 +67,9 @@ http://developer.android.com/sdk/eclipse-adt.html#installing
 
 Phew! If you get error messages, Google around for a fix.
 
-= 2. Compare the `hello, world` examples =
+== 2. Compare the <tt>hello, world</tt> examples ==
 
-Compare the two versions of `hello, world`:
+Compare the two versions of <tt>hello, world</tt>:
 
 http://developer.android.com/resources/tutorials/hello-world.html
 
@@ -75,13 +79,9 @@ http://developer.android.com/resources/tutorials/hello-world.html
 
 So, in this next posting:
 
-http://code.google.com/p/android-java-tutorial/wiki/SimpleTutorialApp
+https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/SimpleTutorialApp
 
 ...I created an example with the best of both worlds: robust XML-based layout UI and programmatic control of the UI.
-
-_Update April, 20 2012_ Google has posted a more extensive tutorial here:
-
-http://developer.android.com/training/index.html
 
 Bear in mind that if you want to upload your app to the Google Play store (formerly Android Market):
 

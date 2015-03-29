@@ -1,6 +1,6 @@
 ''Continued from:''
 
-https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/GettingStarted
+https://github.com/ColinAWarwick/android-java-tutorial/blob/master/wiki/GettingStarted.wiki
 
 = My first example =
 
@@ -166,4 +166,4 @@ Ever since Brian Kernighan co-wrote the `hello, world` example in "The C Program
 
 The next posting will give links to some more tutorial and my next example:
 
-https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/StageTwo
+https://github.com/ColinAWarwick/android-java-tutorial/blob/master/wiki/StageTwo.wiki

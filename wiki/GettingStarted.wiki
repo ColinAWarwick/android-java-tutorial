@@ -79,7 +79,7 @@ http://developer.android.com/resources/tutorials/hello-world.html
 
 So, in this next posting:
 
-https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/SimpleTutorialApp
+https://github.com/ColinAWarwick/android-java-tutorial/blob/master/wiki/SimpleTutorialApp
 
 ...I created an example with the best of both worlds: robust XML-based layout UI and programmatic control of the UI.
 

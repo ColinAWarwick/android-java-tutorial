@@ -1,7 +1,4 @@
-#summary A simple tutorial app
-#labels Featured
-
-_Continued from:_
+''Continued from:''
 
 https://github.com/ColinAWarwick/android-java-tutorial/edit/master/wiki/GettingStarted
 
@@ -58,7 +55,7 @@ public class HelloTextView extends Activity {
 
 File #2:
 
-<code>
+<pre>
 // ./HelloTextView/src/com.example.hellotextview/Motor.java
 package com.example.hellotextview;
 
@@ -92,10 +89,10 @@ public class Motor {
 		}
 	}
 }
-</code>
+</pre>
 
 File #3:
-<code>
+<pre>
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ./HelloTextView/res/layout/main.xml -->
 <LinearLayout
@@ -143,10 +140,10 @@ File #3:
 	android:text="@string/motor_status_def"  
 	android:layout_width="fill_parent"/> 
 </LinearLayout>   
-</code>
+</pre>
 
 File #4 values/strings.xml:
-<code>
+<pre>
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ./HelloTextView/res/values/strings.xml -->
 <resources>
@@ -155,11 +152,11 @@ File #4 values/strings.xml:
     <string name="motor_status_def">Status unknown</string>
     <string name="app_name">HelloTextView</string>
 </resources>
-</code>
+</pre>
 
 = Result =
 
-<wiki:video url="http://www.youtube.com/watch?v=WTE-dhHLAHI&hd=1"/>
+http://www.youtube.com/watch?v=WTE-dhHLAHI&hd=1
 
 = Libraries are more important than language =
 

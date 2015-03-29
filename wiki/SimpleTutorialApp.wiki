@@ -12,7 +12,7 @@ I separated the program (in the Java code) from the presentation (in the XML res
 
 File #1:
 
-<code>
+<pre>
 // ./HelloTextView/src/com.example.hellotextview/HelloTextView.java
 package com.example.hellotextview;
 
@@ -54,7 +54,7 @@ public class HelloTextView extends Activity {
     	theText.setText(m1.id + m1.stop());
     }
 }
-</code>
+</pre>
 
 File #2:
 
